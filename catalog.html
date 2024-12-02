@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fund</title>
+    <link rel="icon" href="./image/logo_web.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./catalog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <section id="banner">
+        <header>
+            <div id="buttons">
+                <a href="../main/main.html"><img id="logo" src="./image/logo_dark.png" alt=""></a>
+                <button id="home_btn"><a href="../main/main.html">Home</a></button>
+                <button id="catalog_btn"><a href="../catalog/catalog.html">Catalog</a></button>
+                <button id="blog_btn">Blog</button>
+            </div>
+            <a href="../user/sign_in.html"><i class="fa-regular fa-user" id="user_icon"></i></a>
+        </header>
+        <div id="appeal">
+            <h1><span style="color: #3D3DFF">Here you can also invest in</span> Ukrainian startups</h1>
+            <div id="search-container">
+                <form id="search-form" method="GET">
+                    <input type="text" id="search-input" name="query" placeholder="Search...">
+                    <button type="submit" id="search-button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <img src="./image/Ellipse.png" id="ellipse">
+        <img src="./image/tower.png" id="tower_img">
+    </section>
+    <section id="active_catalog">
+        <nav id="catalog_nav">
+            <h2>Filter by:</h2>
+            <hr>
+            <div id="type_fund_choice">
+                <h3>Type funraiser:</h3>
+                    <div id="option_type_fund">
+                        <label>
+                            Armament
+                            <input type="checkbox" id="chek1">
+                            <span class="custom-checkbox"></span>
+                        </label>
+                        <label>
+                            Humanitarian aid
+                            <input type="checkbox" id="check2">
+                            <span class="custom-checkbox"></span>
+                        </label>
+                        <label>
+                            Humanitarian demining
+                            <input type="checkbox" id="check3">
+                            <span class="custom-checkbox"></span>
+                        </label>
+                        <label>
+                            Reconstruction
+                            <input type="checkbox" id="check4">
+                            <span class="custom-checkbox"></span>
+                        </label>
+                        <label>
+                            Startup
+                            <input type="checkbox" id="check5">
+                            <span class="custom-checkbox"></span>
+                        </label>
+                        <label>
+                            Other
+                            <input type="checkbox" id="check6">
+                            <span class="custom-checkbox"></span>
+                        </label>
+                    </div>
+            </div>
+            <hr>
+            <div id="slider_block">
+                <h3>Target amount:</h3>
+                <input type="range" min="50" max="10000" value="50" id="slider"><br>
+                <span id="sliderValue">50 тис</span>
+            </div>
+            <hr>
+            <h3>Reliability:</h3>
+            <div id="reability_choice">
+                <label>
+                    Successful fundraiser
+                    <input type="checkbox" id="chek7">
+                    <span class="custom-checkbox"></span>
+                </label>
+                <label>
+                    Suspicious fundraiser
+                    <input type="checkbox" id="check8">
+                    <span class="custom-checkbox"></span>
+                </label>
+                <label>
+                    Failed fundraiser 
+                    <input type="checkbox" id="check9">
+                    <span class="custom-checkbox"></span>
+                </label>
+                <label>
+                    Checking fundraiser 
+                    <input type="checkbox" id="check10">
+                    <span class="custom-checkbox"></span>
+                </label>
+            </div>
+            <hr>
+            <button id="clear">Clear All</button>
+        </nav>
+        <!-- <section id="catalog_section">
+            <section id="catalog_box">
+                <h2 id="name_of_fundraiser">Swarm Of Revenge</h2>
+                <img src="./image/Swarm Of Revenge_icon.png" alt="" id="icon_of_fund">
+                <p id="creator">Created by: <span style="font-weight: bold">Prytula fund</span></p>
+                <div id="price_section">
+                    <p id="price">500 000₴</p>
+                    <button id="to_donate">To donate</button>
+                </div>
+            </section>
+            <section id="catalog_box_2">
+                <h2 id="name_of_fundraiser">Swarm Of Revenge</h2>
+                <img src="./image/Swarm Of Revenge_icon.png" alt="" id="icon_of_fund">
+                <p id="creator">Created by: <span style="font-weight: bold">Prytula fund</span></p>
+                <div id="price_section">
+                    <p id="price">500 000₴</p>
+                    <button id="to_donate">To donate</button>
+                </div>
+            </section>
+        </section>
+    </section> -->
+    <script src="catalog.js"></script>
+</body>
+</html>
